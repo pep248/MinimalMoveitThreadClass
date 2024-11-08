@@ -34,6 +34,21 @@ rosdep install --from-paths src --ignore-src -r -y
 colcon build
 ```
 
+### Note
+
+If you are using this package inside WSL, it may complain about the OGRE library:
+
+```log
+terminate called after throwing an instance of 'Ogre::UnimplementedException'
+what():  OGRE EXCEPTION(9:UnimplementedException):  in GL3PlusTextureGpu::copyTo at /build/ogre-next-UFfg83/ogre-next-2.2.5+dfsg3/RenderSystems/GL3Plus/src/OgreGL3PlusTextureGpu.cpp (line 677)
+```
+
+ To fix this, you can try the following:
+
+```bash
+export LIBGL_ALWAYS_SOFTWARE=1
+```
+
 ### Dependencies
 - MoveIt
 - UR Robot packages
