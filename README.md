@@ -4,10 +4,7 @@ This repository demonstrates how to implement a MoveIt node running in a paralle
 
 ## Overview
 
-The package provides a minimal example of:
-- Running MoveIt operations in a separate thread
-- Maintaining responsiveness to external inputs
-- Demonstrating basic motion planning with UR robots
+The package provides a minimal example of how to run a basic UR routine, while the Node spinner remains alive in the background.
 
 ## Usage
 
