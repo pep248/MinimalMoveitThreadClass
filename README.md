@@ -1,4 +1,4 @@
-# MinimalMoveitThreadClass
+# ros2_MinimalMoveitThreadClass
 
 This repository demonstrates how to implement a MoveIt node running in a parallel thread, which allows the node spinner to continue running. This enables the node to receive incoming messages from subscriber topics or service calls while executing motion planning tasks, allowing dynamic behavior modification even during execution.
 
